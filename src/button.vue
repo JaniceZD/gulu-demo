@@ -65,6 +65,7 @@
         }
 
         > .content {
+            vertical-align: top;
             order: 2;
         }
 
