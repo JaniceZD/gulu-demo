@@ -1,5 +1,3 @@
-import {describe} from "mocha";
-
 const expect = chai.expect;
 import Vue from 'vue'
 import Button from '../src/button'
@@ -9,7 +7,7 @@ Vue.config.devtools = false
 
 describe('Button', () => {
     it('存在.', () => {
-        expect(Button).to.be.ok
+        expect(Button).to.exist
     })
     it('可以设置icon.', () => {
         const Constructor = Vue.extend(Button)
