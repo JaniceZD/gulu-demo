@@ -36,8 +36,17 @@ new Vue({
         message: 'hi'
     },
     created() {
-        this.$toast('文字', {
-            enableHtml: false
+        this.$toast('您的余额已不足，请及时充值！', {
+            position: 'middle',
+            enableHtml: false,
+            closeButton: {
+                text: '已充值',
+                callback: () => {
+                    console.log('已经充值了！')
+                }
+            },
+            autoClose: false,
+            autoCloseDelay: 3
         })
     },
     methods: {
