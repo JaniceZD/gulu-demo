@@ -41,7 +41,7 @@ new Vue({
     methods: {
         showToast() {
             this.$toast(`您的余额目前为${parseInt(Math.random() * 100)}，请及时充值！`, {
-                position: 'middle',
+                position: 'bottom',
                 enableHtml: false,
                 closeButton: {
                     text: '已充值',
