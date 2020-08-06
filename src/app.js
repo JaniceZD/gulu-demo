@@ -36,21 +36,22 @@ new Vue({
         message: 'hi'
     },
     created() {
-        this.$toast('您的余额已不足，请及时充值！', {
-            position: 'middle',
-            enableHtml: false,
-            closeButton: {
-                text: '已充值',
-                callback: () => {
-                    console.log('已经充值了！')
-                }
-            },
-            autoClose: false,
-            autoCloseDelay: 3
-        })
+
     },
     methods: {
         showToast() {
+            this.$toast(`您的余额目前为${parseInt(Math.random() * 100)}，请及时充值！`, {
+                position: 'middle',
+                enableHtml: false,
+                closeButton: {
+                    text: '已充值',
+                    callback: () => {
+                        console.log('已经充值了！')
+                    }
+                },
+                autoClose: false,
+                autoCloseDelay: 3
+            })
         }
     }
 });
