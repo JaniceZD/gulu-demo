@@ -20,13 +20,14 @@
     .tabs-head {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
         border: 1px solid red;
         height: $tab-height;
 
         > .actions-wrapper {
             margin-left: auto;
             padding: 0 14px;
+            display: flex;
+            align-items: center;
         }
     }
 </style>
