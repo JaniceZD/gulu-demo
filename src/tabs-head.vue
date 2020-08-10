@@ -11,9 +11,11 @@
     export default {
         name: 'GuluTabsHead',
         inject: ['eventBus'],
-        created() {
-            this.eventBus.$emit('update:selected', (item, vm) => {
-                console.log(item)
+        mounted() {
+            this.eventBus.$on('update:selected', (item, vm) => {
+                let {width, height, top, left} = vm.$el.getBoundingClientRect()
+                this.$refs.line.style.width = `${width}px`
+                this.$refs.line.style.left = `${left}px`
             })
         }
     }
@@ -24,15 +26,14 @@
     .tabs-head {
         display: flex;
         justify-content: flex-start;
-        border: 1px solid red;
         height: $tab-height;
         position: relative;
 
         > .line {
             position: absolute;
-            width: 100px;
             border: 1px solid $blue;
             bottom: 0;
+            transition: all 350ms;
         }
 
         > .actions-wrapper {
