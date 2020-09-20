@@ -1,40 +1,28 @@
-# 轱辘 - 一个 Vue UI 组件
-[![Build Status](https://travis-ci.com/JaniceZD/gulu-demo.svg?branch=master)](https://travis-ci.com/JaniceZD/gulu-demo)
+<h1 align="center">Welcome to just-test-1 👋</h1>
+<p>
 
-## 介绍
-这是我在学习 Vue 过程中做的一个 UI 框架，希望对你有用。
+  [![Build Status](https://travis-ci.com/JaniceZD/gulu-demo.svg?branch=master)](https://travis-ci.com/JaniceZD/gulu-demo)
+  [![npm package](https://img.shields.io/npm/v/just-test-1.svg)](https://www.npmjs.com/package/just-test-1)
+  ![](https://img.shields.io/badge/language-JavaScript-green.svg)
+  ![(https://github.com/JaniceZD/gulu-demo/blob/master/LICENSE)](https://img.shields.io/badge/License-MIT-yellow.svg)
+  
+</p>
 
-## 开始使用
-1.添加CSS样式
+> 柠檬UI 是一个实用的 UI 简易框架，目前提供了一些常用组件（不定期更新），适合 PC 端和移动端使用。
+### 🏠 [Homepage](https://janicezd.github.io/gulu-demo/)
 
-使用本框架前，请在 CSS 中开启 border-box
-```css
-*,*::before,*::after {box-sizing: border-box;}
-```
-IE 8 及以上浏览器都支持此样式。
-你还需要设置默认颜色等变量（后续会改为 SCSS 变量）
-```
-html {
-  --button-height: 32px;
-  --font-size: 14px;
-  --button-bg: white;
-  --button-active-bg: #eee;
-  --border-radius: 4px;
-  --color: #333;
-  --border-color: #999;
-  --border-color-hover: #666;
-}
-```
-IE 15 及以上浏览器都支持此样式。
 
-2.安装 gulu
-```
+## Install
+
+```sh
 npm i --save just-test-1
 ```
-3.引入 gulu
+
+## Usage
+
 ```
 import {Button, ButtonGroup, Icon} from 'just-test-1'
-import 'frank-test-1-1/dist/index.css'
+import 'just-test-1/dist/index.css'
 
 export default {
   name: 'app',
@@ -45,13 +33,30 @@ export default {
 }
 ```
 
+## Run tests
 
-## 文档
+```sh
+npm run test
+```
 
-## 提问
+## Author
 
-## 变更记录
+👤 **Janice Zhang**
 
-## 联系方式
+* Github: [@JaniceZD](https://github.com/JaniceZD)
 
-## 贡献代码
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/JaniceZD/gulu-demo/issues). You can also take a look at the [contributing guide](https://github.com/JaniceZD/gulu-demo/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Janice Zhang](https://github.com/JaniceZD).<br />
+This project is [MIT](https://github.com/JaniceZD/gulu-demo/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
