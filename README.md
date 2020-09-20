@@ -4,7 +4,7 @@
   [![Build Status](https://travis-ci.com/JaniceZD/gulu-demo.svg?branch=master)](https://travis-ci.com/JaniceZD/gulu-demo)
   [![npm package](https://img.shields.io/npm/v/just-test-1.svg)](https://www.npmjs.com/package/just-test-1)
   ![](https://img.shields.io/badge/language-JavaScript-green.svg)
-  ![(https://github.com/JaniceZD/gulu-demo/blob/master/LICENSE)](https://img.shields.io/badge/License-MIT-yellow.svg)
+  [![](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/JaniceZD/gulu-demo/blob/master/LICENSE)
   
 </p>
 
@@ -47,7 +47,7 @@ npm run test
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/JaniceZD/gulu-demo/issues). You can also take a look at the [contributing guide](https://github.com/JaniceZD/gulu-demo/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/JaniceZD/gulu-demo/issues). You can also take a look at the [contributing guide](https://github.com/JaniceZD/gulu-demo/pulls).
 
 ## Show your support
 
