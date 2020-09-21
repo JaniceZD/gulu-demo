@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/JaniceZD/gulu-demo#readme",
   "dependencies": {
-    "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
@@ -45,8 +44,9 @@
     "sass-loader": "^9.0.3",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
-    "vue-template-compiler": "^2.6.11",
-    "vuepress": "^1.5.3"
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.5.4"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
