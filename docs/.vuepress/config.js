@@ -1,16 +1,25 @@
 module.exports = {
     base: '/gulu-demo/',
-    title: '轱辘UI',
+    title: '柠檬UI',
     description: '一个好用的UI框架',
+    markdown: {
+        anchor: {permalink: false},
+    },
     themeConfig: {
         nav: [
-            {text: '主页', link: '/'},
-            {text: '文档', link: '/guide/'},
-            {text: '交流', link: 'https://google.com'},
+            {text: "主页", link: "/", target: "_self"},
+            {text: "文档", link: "/install/", target: "_self"},
+            {text: "Github", link: "https://github.com/JaniceZD/gulu-demo"}
         ],
         sidebar: [
             {
+                title: "介绍",
+                collapsable: false,
+                children: ["/introduce/"]
+            },
+            {
                 title: '入门',
+                collapsable: false,
                 children: [
                     '/install/',
                     '/get-started/',
@@ -18,14 +27,16 @@ module.exports = {
             },
             {
                 title: '组件',
+                collapsable: false,
                 children: [
-                    '/components/button',
-                    '/components/tabs',
-                    '/components/input',
-                    '/components/grid',
-                    '/components/layout',
-                    '/components/toast',
-                    '/components/tabs',
+                    "/components/button",
+                    "/components/input",
+                    "/components/tabs",
+                    "/components/grid",
+                    "/components/layout",
+                    "/components/popover",
+                    "/components/collapse",
+                    "/components/toast"
                 ]
             },
 

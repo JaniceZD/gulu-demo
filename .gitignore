@@ -1,4 +1,7 @@
+.history
 node_modules/
-.cache/
+*.idea/
 dist/
-.idea/
+.cache/
+*.log/
+package-lock.json
