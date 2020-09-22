@@ -10,14 +10,14 @@
 
 ## 现已支持
 
-- [x] Button（按钮）
-- [x] Input（输入框）
-- [x] Grid（栅栏）
-- [x] Layout（布局）
-- [x] Toast（吐司弹出）
-- [x] Tabs（标签页）
-- [x] Popover（弹出框）
-- [x] Collapse（折叠面板）
+-[x] Button（按钮）
+-[x] Input（输入框）
+-[x] Grid（栅栏）
+-[x] Layout（布局）
+-[x] Toast（吐司弹出）
+-[x] Tabs（标签页）
+-[x] Popover（弹出框）
+-[x] Collapse（折叠面板）
 
 ## 提问
 
