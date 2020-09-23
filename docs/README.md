@@ -1,7 +1,7 @@
 ---
 home: true
-Image: /lemon.png
-actionText: Get start
+heroImage: /lemon.png
+actionText: 快速上手
 actionLink: /introduce/
 features:
 - title: Elegant
