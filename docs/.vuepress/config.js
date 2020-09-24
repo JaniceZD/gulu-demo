@@ -9,9 +9,10 @@ module.exports = {
     themeConfig: {
         logo: '/lemon.png',
         smoothScroll: true,
+        activeHeaderLinks: true,
         nav: [
-            {text: "主页", link: "/", target: "_self"},
-            {text: "文档", link: "/install/", target: "_self"},
+            {text: "主页", link: "/"},
+            {text: "文档", link: "/install/"},
             {text: "Github", link: "https://github.com/JaniceZD/gulu-demo"}
         ],
         sidebar: [
@@ -41,8 +42,7 @@ module.exports = {
                     "/components/collapse",
                     "/components/toast"
                 ]
-            },
-
+            }
         ]
     }
-}
+};

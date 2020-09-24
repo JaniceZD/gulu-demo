@@ -14,15 +14,14 @@ title: Button
 
 #### 浏览
 
-#
-
 <ClientOnly>
 <button-demos></button-demos>
 </ClientOnly>
 
 #### 代码
 
-```html
+::: details 点击查看源码
+```vue
 <div>
   <g-button>默认按钮</g-button>
   <g-button type="success">成功按钮</g-button>
@@ -52,20 +51,19 @@ title: Button
   <g-button type="danger" round border>危险按钮</g-button>
 </div>
 ```
+:::
 
 ## 禁用状态
 
 #### 浏览
-
-#
 
 <ClientOnly>
   <button-disabled></button-disabled>
 </ClientOnly>
 
 #### 代码
-
-```html
+::: details 点击查看源码
+```vue
 <div>
     <g-button disabled>默认按钮</g-button>
     <g-button type="success" disabled>成功按钮</g-button>
@@ -81,21 +79,20 @@ title: Button
     <g-button type="danger" border disabled>危险按钮</g-button>
 </div>
 ```
+:::
 
 
 ## 添加图标
 
 #### 浏览
 
-#
-
 <ClientOnly>
   <button-icon></button-icon>
 </ClientOnly>
 
 #### 代码
-
-```html
+::: details 点击查看源码
+```vue
 <div>
   <g-button icon="settings">设置</g-button>
   <g-button icon="thumbs-up">点赞</g-button>
@@ -109,22 +106,22 @@ title: Button
   <g-button :loading="true" border>登录中</g-button>
 </div>
 ```
+:::
 
 ## 按钮组合
 
 #### 浏览
-
-#
 
 <ClientOnly>
   <buttonGroup-demos></buttonGroup-demos>
 </ClientOnly>
 
 #### 代码
-
-```html
+::: details 点击查看源码
+```vue
 <g-button-group>
   <g-button icon="left" icon-position="left" border>上一页</g-button>
   <g-button icon="right" icon-position="right" border>下一页</g-button>
 </g-button-group>
 ```
+:::

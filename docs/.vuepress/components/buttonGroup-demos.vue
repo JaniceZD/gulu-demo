@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <g-button-group>
             <g-button icon="left" icon-position="left" border>上一页</g-button>
             <g-button icon="right" icon-position="right" border>下一页</g-button>
@@ -18,3 +18,12 @@
         }
     };
 </script>
+<style scoped>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 1.6em 0 4px;
+    }
+</style>
