@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
+    "@vuepress/plugin-active-header-links": "^1.5.4",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
     "karma": "^5.1.1",

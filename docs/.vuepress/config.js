@@ -2,10 +2,13 @@ module.exports = {
     base: '/gulu-demo/',
     title: '柠檬UI',
     description: '一个好用的UI框架',
+    lastUpdated: "Last Updated",
     markdown: {
         anchor: {permalink: false},
     },
     themeConfig: {
+        logo: '/lemon.png',
+        smoothScroll: true,
         nav: [
             {text: "主页", link: "/", target: "_self"},
             {text: "文档", link: "/install/", target: "_self"},
