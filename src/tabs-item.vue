@@ -40,7 +40,7 @@
         methods: {
             onClick() {
                 if (this.disabled) return;
-                this.eventBus && this.eventBus.$emit('update:selected', this.name, this)
+                this.eventBus && this.eventBus.$emit('update:selected', this.name, this);
                 this.$emit('click', this)
             }
         }
@@ -51,7 +51,7 @@
     $disabled-text-color: grey;
     .tabs-item {
         flex-shrink: 0;
-        padding: 0 1em;
+        padding: 0 2em;
         height: 100%;
         cursor: pointer;
         display: flex;
