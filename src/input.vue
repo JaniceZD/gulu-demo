@@ -1,13 +1,11 @@
 <template>
     <div class="wrapper" :class="{error}">
-        <label>
-            <input :value="value" type="text" :disabled="disabled" :readonly="readonly"
-                   @change="$emit('change',$event.target.value)"
-                   @input="$emit('input',$event.target.value)"
-                   @focus="$emit('focus',$event.target.value)"
-                   @blur="$emit('blur',$event.target.value)"
-            >
-        </label>
+        <input :value="value" type="text" :disabled="disabled" :readonly="readonly"
+               @change="$emit('change',$event.target.value)"
+               @input="$emit('input',$event.target.value)"
+               @focus="$emit('focus',$event.target.value)"
+               @blur="$emit('blur',$event.target.value)"
+        />
         <template v-if="error">
             <icon name="error" fill="danger" border></icon>
             <span class="errorMessage">{{error}}</span>
@@ -39,15 +37,10 @@
     }
 </script>
 <style lang="scss" scoped>
-    $height: 32px;
-    $border-color: #999;
-    $border-color-hover: #666;
-    $border-radius: 4px;
-    $font-size: 12px;
-    $box-shadow-color: rgba(0, 0, 0, 0.5);
-    $red: #F1453D;
+    @import "style";
+
     .wrapper {
-        font-style: $font-size;
+        font-size: $font-size;
         display: inline-flex;
         align-items: center;
 
@@ -56,37 +49,54 @@
         }
 
         > input {
-            height: 32px;
-            border: 1px solid $border-color;
+            height: $input-height;
+            border: 2px solid $color-primary;
             border-radius: 4px;
             padding: 0 8px;
-            font-style: inherit;
+            font-size: inherit;
 
-            &.hover {
+            &:hover {
                 border-color: $border-color-hover;
             }
 
-            &.focus {
-                box-shadow: inset 0 1px 3px $box-shadow-color;
+            &:focus {
+                box-shadow: inset 0 1px 3px $color-primary;
                 outline: none;
             }
 
             &[disabled], &[readonly] {
-                border-color: #bbb;
-                color: #bbb;
+                border-color: $color-info;
+                color: $color-info;
                 cursor: not-allowed;
+            }
+
+            &[readOnly]:focus {
+                outline: none;
+                box-shadow: inset 0 1px 3px $color-info;
+            }
+
+            &[disabled] {
+                opacity: 0.5;
             }
         }
 
         &.error {
             > input {
-                border-color: $red;
+                border: 2px solid $color-danger;
+                color: $color-danger;
+
+                &:hover {
+                    border-color: $red-hover-color;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: inset 0 1px 3px $color-danger;
+                }
             }
         }
 
-        .icon-error { fill: $red; }
-
-        .errorMessage { color: $red; }
+        .errorMessage { color: $color-danger; line-height: 1rem;}
     }
 
 </style>

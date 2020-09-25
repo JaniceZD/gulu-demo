@@ -1,6 +1,8 @@
 <template>
-    <div>
+    <div class="container">
         <g-input v-model="value"></g-input>
+        <br/>
+        <br/>
         <div>value: {{value}}</div>
     </div>
 </template>
@@ -21,5 +23,7 @@
 </script>
 
 <style scoped>
-
+    .container {
+        margin: 1.6em 0 4px;
+    }
 </style>

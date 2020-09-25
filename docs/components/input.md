@@ -19,10 +19,10 @@ title: Input 输入框
 #### 代码
 ::: details 点击查看源码
 ```vue
-<g-input value="中文"></g-input>
-<g-input value="中文" readonly></g-input>
-<g-input value="中文" disabled></g-input>
-<g-input value="中文" error="错误"></g-input>
+<g-input value="Hello"></g-input>
+<g-input value="Hello" readonly></g-input>
+<g-input value="Hello" disabled></g-input>
+<g-input value="Hello" error="错误"></g-input>
 ```
 :::
 
