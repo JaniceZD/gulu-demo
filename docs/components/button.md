@@ -10,9 +10,10 @@ title: Button
 - 可使用单个按钮和组合形式的按钮
 - 按钮可以添加图标，设置图标位置
 
-## 单个按钮
+## 示例
+### 单个按钮
 
-#### 浏览
+#### 预览
 
 <ClientOnly>
 <button-demos></button-demos>
@@ -53,9 +54,9 @@ title: Button
 ```
 :::
 
-## 禁用状态
+### 禁用状态
 
-#### 浏览
+#### 预览
 
 <ClientOnly>
   <button-disabled></button-disabled>
@@ -82,9 +83,9 @@ title: Button
 :::
 
 
-## 添加图标
+### 添加图标
 
-#### 浏览
+#### 预览
 
 <ClientOnly>
   <button-icon></button-icon>
@@ -108,9 +109,9 @@ title: Button
 ```
 :::
 
-## 按钮组合
+### 按钮组合
 
-#### 浏览
+#### 预览
 
 <ClientOnly>
   <buttonGroup-demos></buttonGroup-demos>
@@ -125,3 +126,23 @@ title: Button
 </g-button-group>
 ```
 :::
+
+## 属性
+
+### 1. 图标
+
+通过设置 `icon` 属性在 Button 内嵌入一个 `Icon`。
+
+通过设置 `iconPosition` 属性改变 `Icon` 在 `Button` 中的位置，仅支持`left`和`right`两个位置。
+
+### 2. 加载中状态
+
+通过设置 `loading` 属性，可以让按钮处于加载中状态。
+
+### 3. 禁用状态
+
+通过设置 `disabled` 属性，可将按钮设置为不可用状态
+
+### 4. 按钮组
+
+通过 `g-button-group` 标签包裹 `g-button` 标签可实现按钮组功能

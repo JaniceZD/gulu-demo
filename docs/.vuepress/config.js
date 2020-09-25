@@ -3,13 +3,9 @@ module.exports = {
     title: '柠檬UI',
     description: '一个好用的UI框架',
     lastUpdated: "Last Updated",
-    markdown: {
-        anchor: {permalink: false},
-    },
     themeConfig: {
         logo: '/lemon.png',
         smoothScroll: true,
-        activeHeaderLinks: true,
         nav: [
             {text: "主页", link: "/"},
             {text: "文档", link: "/install/"},
