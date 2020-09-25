@@ -11,7 +11,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     .tabs-body {
 
     }
