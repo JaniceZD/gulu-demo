@@ -46,7 +46,8 @@
     "sinon-chai": "^3.5.0",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
-    "vuepress": "^1.5.4"
+    "vuepress": "^1.5.4",
+    "vuepress-plugin-smooth-scroll": "0.0.10"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
