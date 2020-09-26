@@ -27,6 +27,8 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        overflow: hidden;
 
         &.hasSider {
             flex-direction: row;

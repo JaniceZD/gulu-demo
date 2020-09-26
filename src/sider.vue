@@ -19,6 +19,13 @@
 <style lang="scss" scoped>
     .sider {
         position: relative;
+        background: #3ba0e9;
+        color: #fff;
+        line-height: 120px;
+        flex: 0 0 200px;
+        max-width: 200px;
+        min-width: 200px;
+        width: 200px;
 
         > button {
             position: absolute;
@@ -32,6 +39,6 @@
     }
 
     .slide-enter, .slide-leave-to {
-        magin-left: -200px;
+        margin-left: -200px;
     }
 </style>
