@@ -80,6 +80,10 @@
     }
 </script>
 <style lang="scss" scoped>
+    * {
+        box-sizing: border-box;
+    }
+
     .col {
         $class-prefix: col-;
         @for $n from 1 through 24 {

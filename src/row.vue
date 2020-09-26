@@ -40,6 +40,10 @@
     }
 </script>
 <style lang="scss" scoped>
+    * {
+        box-sizing: border-box;
+    }
+
     .row {
         display: flex;
         flex-wrap: wrap;
