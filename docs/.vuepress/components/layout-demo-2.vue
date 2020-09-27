@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <g-layout>
-            <g-header>header</g-header>
+            <g-header>Header</g-header>
             <g-layout>
-                <g-sider>sider</g-sider>
-                <g-content>content</g-content>
+                <g-sider>Sider</g-sider>
+                <g-content>Content</g-content>
             </g-layout>
-            <g-footer>footer</g-footer>
+            <g-footer>Footer</g-footer>
         </g-layout>
     </div>
 </template>

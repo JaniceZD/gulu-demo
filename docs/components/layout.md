@@ -21,9 +21,9 @@ title: Layout 布局
 ```html
 <div class="container">
     <g-layout>
-        <g-header>header</g-header>
-        <g-content>content</g-content>
-        <g-footer>footer</g-footer>
+        <g-header>Header</g-header>
+        <g-content>Content</g-content>
+        <g-footer>Footer</g-footer>
     </g-layout>
 </div>
 ```
@@ -44,12 +44,12 @@ title: Layout 布局
 ```html
 <div class="container">
     <g-layout>
-        <g-header>header</g-header>
+        <g-header>Header</g-header>
         <g-layout>
-            <g-sider>sider</g-sider>
-            <g-content>content</g-content>
+            <g-sider>Sider</g-sider>
+            <g-content>Content</g-content>
         </g-layout>
-        <g-footer>footer</g-footer>
+        <g-footer>Footer</g-footer>
     </g-layout>
 </div>
 ```
@@ -68,11 +68,11 @@ title: Layout 布局
 ```html
 <div class="container">
     <g-layout>
-        <g-sider>sider</g-sider>
+        <g-sider>Sider</g-sider>
         <g-layout>
-            <g-header>header</g-header>
-            <g-content>content</g-content>
-            <g-footer>footer</g-footer>
+            <g-header>Header</g-header>
+            <g-content>Content</g-content>
+            <g-footer>Footer</g-footer>
         </g-layout>
     </g-layout>
 </div>
