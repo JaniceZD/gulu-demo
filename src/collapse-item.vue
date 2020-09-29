@@ -61,8 +61,8 @@
             min-height: 32px;
             display: flex;
             align-items: center;
-            padding: 0 8px;
-            background: lighten($grey, 8%);
+            padding: 4px 16px;
+            background: lighten($grey, 10%);
         }
 
         &:first-child {
@@ -80,7 +80,7 @@
         }
 
         > .content {
-            padding: 8px;
+            padding: 12px 16px;
         }
     }
 </style>
