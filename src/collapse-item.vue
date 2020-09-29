@@ -1,6 +1,7 @@
 <template>
     <div class="collapseItem">
         <div class="title" @click="toggle" :data-name="name">
+            <g-icon class="icon" :class="[{active: open}]" fill="info" name="right" border></g-icon>
             {{title}}
         </div>
         <div class="content" ref="content" v-if="open">
@@ -10,8 +11,13 @@
 </template>
 
 <script>
+    import Icon from './icon';
+
     export default {
         name: "GuluCollapseItem",
+        components: {
+            'g-icon': Icon
+        },
         props: {
             title: {
                 type: String,
@@ -63,6 +69,18 @@
             align-items: center;
             padding: 4px 16px;
             background: lighten($grey, 10%);
+
+
+            > .icon {
+                width: .9em;
+                height: .9em;
+                margin-right: .5em;
+
+                &.active {
+                    transform: rotate(90deg);
+                    transition: all .4s ease;
+                }
+            }
         }
 
         &:first-child {
@@ -80,7 +98,7 @@
         }
 
         > .content {
-            padding: 12px 16px;
+            padding: 12px 18px;
         }
     }
 </style>
