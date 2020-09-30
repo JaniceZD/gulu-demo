@@ -70,7 +70,6 @@
             padding: 4px 16px;
             background: lighten($grey, 10%);
 
-
             > .icon {
                 width: .9em;
                 height: .9em;

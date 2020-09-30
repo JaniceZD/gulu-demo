@@ -53,7 +53,7 @@
             }
         },
         mounted() {
-            this.updateStyles()
+            this.updateStyles();
             this.execAutoClose()
         },
         methods: {
@@ -72,12 +72,12 @@
                 }
             },
             close() {
-                this.$el.remove()
-                this.$emit('close')
+                this.$el.remove();
+                this.$emit('close');
                 this.$destroy()
             },
             onClickClose() {
-                this.close()
+                this.close();
                 if (this.closeButton && typeof this.closeButton.callback === 'function') {
                     this.closeButton.callback(this)
                 }
@@ -109,6 +109,7 @@
         left: 50%;
         transform: translateX(-50%);
         $animation-duration: 300ms;
+        z-index: 20;
 
         &.position-top {
             top: 0;
@@ -157,6 +158,7 @@
         .close {
             padding-left: 16px;
             flex-shrink: 0;
+            cursor: default;
         }
 
         .line {
