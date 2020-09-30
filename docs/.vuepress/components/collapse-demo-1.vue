@@ -27,6 +27,6 @@
 
 <style lang="scss" scoped>
     .container {
-        margin: 1.6em 0 4px;
+        margin: 1.6em 0 50px;
     }
 </style>

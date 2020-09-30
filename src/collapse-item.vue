@@ -46,9 +46,9 @@
         methods: {
             toggle() {
                 if (this.open) {
-                    this.eventBus && this.eventBus.$emit('update:removeSelected', this.name)
+                    this.eventBus && this.eventBus.$emit('update:removeSelected', this.name);
                 } else {
-                    this.eventBus && this.eventBus.$emit('update:addSelected', this.name)
+                    this.eventBus && this.eventBus.$emit('update:addSelected', this.name);
                 }
             }
         }
@@ -69,6 +69,7 @@
             align-items: center;
             padding: 4px 16px;
             background: lighten($grey, 10%);
+            cursor: pointer;
 
             > .icon {
                 width: .9em;
