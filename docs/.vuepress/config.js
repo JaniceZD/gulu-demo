@@ -1,6 +1,6 @@
 module.exports = {
     base: '/gulu-demo/',
-    title: '柠檬UI',
+    title: '柠檬 UI',
     description: '一个好用的UI框架',
     lastUpdated: "Last Updated",
     themeConfig: {
@@ -8,7 +8,7 @@ module.exports = {
         smoothScroll: true,
         nav: [
             {text: "主页", link: "/"},
-            {text: "文档", link: "/install/"},
+            {text: "文档", link: "/introduce/"},
             {text: "Github", link: "https://github.com/JaniceZD/gulu-demo"}
         ],
         sidebar: [

@@ -1,5 +1,5 @@
 ---
-title: Tabs - 标签
+title: 标签页 - Tabs
 ---
 
 # 标签页

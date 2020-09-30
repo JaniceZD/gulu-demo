@@ -5,8 +5,8 @@
             <slot name="content" :close="close"></slot>
         </div>
         <span ref="triggerWrapper" style="display: inline-block;">
-            <slot></slot>
-        </span>
+        <slot></slot>
+</span>
     </div>
 </template>
 
@@ -43,17 +43,19 @@
             }
         },
         destroyed() {
-            if (this.trigger === 'click') {
-                this.$refs.popover.removeEventListener('click', this.onClick)
-            } else {
-                this.$refs.popover.removeEventListener('mouseenter', this.open);
-                this.$refs.popover.removeEventListener('mouseleave', this.close)
+            if (this.$refs.popover) {
+                if (this.trigger === 'click') {
+                    this.$refs.popover.removeEventListener('click', this.onClick)
+                } else {
+                    this.$refs.popover.removeEventListener('mouseenter', this.open);
+                    this.$refs.popover.removeEventListener('mouseleave', this.close)
+                }
             }
         },
         methods: {
             positionContent() {
                 const {contentWrapper, triggerWrapper} = this.$refs;
-                document.body.appendChild(this.$refs.contentWrapper);
+                document.body.appendChild(contentWrapper);
                 const {width, height, top, left} = triggerWrapper.getBoundingClientRect();
                 const {height: height2} = contentWrapper.getBoundingClientRect();
 
@@ -108,7 +110,7 @@
 </script>
 
 <style lang="scss" scoped>
-    $border-color: rgba(0,0,0,.07);
+    $border-color: rgba(0, 0, 0, .07);
     $border-radius: 2px;
     .popover {
         display: inline-block;
@@ -125,12 +127,12 @@
         /*filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));*/
         word-break: break-all;
         padding: 0.6em 1.5em;
-        color: rgba(0,0,0,.85);
+        color: rgba(0, 0, 0, .85);
         display: flex;
         align-items: center;
         max-width: 20em;
-        -webkit-box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
-        box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+        -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);
 
         &::before, &::after {
             content: '';
@@ -147,7 +149,7 @@
 
 
             &::before {
-                border-top-color: rgba(0,0,0,.07);
+                border-top-color: rgba(0, 0, 0, .07);
                 border-bottom: none;
                 top: 100%;
             }
@@ -167,7 +169,7 @@
             }
 
             &::before {
-                border-bottom-color: rgba(0,0,0,.07);
+                border-bottom-color: rgba(0, 0, 0, .07);
                 border-top: none;
                 bottom: 100%;
             }
@@ -189,7 +191,7 @@
             }
 
             &::before {
-                border-left-color: rgba(0,0,0,.07);
+                border-left-color: rgba(0, 0, 0, .07);
                 border-right: none;
                 left: 100%;
             }
@@ -210,7 +212,7 @@
             }
 
             &::before {
-                border-right-color: rgba(0,0,0,.07);
+                border-right-color: rgba(0, 0, 0, .07);
                 border-left: none;
                 right: 100%;
             }

@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /lemon.png
-actionText:  快速上手 
-actionLink: /introduce/
+actionText:  快速上手 →
+actionLink: /install/
 features:
 - title: Elegant
   details: 优雅简洁，并赋予组件涟漪动态效果。
