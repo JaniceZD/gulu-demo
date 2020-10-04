@@ -1,6 +1,6 @@
 {
-  "name": "just-test-1",
-  "version": "0.0.1",
+  "name": "lemon-demo",
+  "version": "1.0.0",
   "description": "这是一个UI框架",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,11 @@
   },
   "keywords": [
     "vue",
-    "ui"
+    "ui",
+    "wheel",
+    "plugins",
+    "vuejs",
+    "ui-components"
   ],
   "author": "janicezd",
   "license": "MIT",

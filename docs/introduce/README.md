@@ -6,7 +6,7 @@ title: 柠檬 UI
 # 柠檬 UI
 
   [![Build Status](https://travis-ci.com/JaniceZD/gulu-demo.svg?branch=master)](https://travis-ci.com/JaniceZD/gulu-demo)
-  [![npm package](https://img.shields.io/npm/v/just-test-1.svg)](https://www.npmjs.com/package/just-test-1)
+  [![npm package](https://img.shields.io/npm/v/lemon-demo.svg)](https://www.npmjs.com/package/lemon-demo)
   ![](https://img.shields.io/badge/language-JavaScript-green.svg)
   [![](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/JaniceZD/gulu-demo/blob/master/LICENSE)
   

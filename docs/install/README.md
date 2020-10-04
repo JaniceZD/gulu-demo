@@ -6,11 +6,11 @@ title: 安装
 
 
 ```shell script
-npm install just-test-1
+npm install lemon-demo
 
 # or
 
-yarn add just-test-1
+yarn add lemon-demo
 ```
 
 

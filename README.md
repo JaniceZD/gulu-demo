@@ -1,8 +1,8 @@
-<h1 align="center">Welcome to just-test-1 👋</h1>
+<h1 align="center">Welcome to lemon-ui 👋</h1>
 <p>
 
   [![Build Status](https://travis-ci.com/JaniceZD/gulu-demo.svg?branch=master)](https://travis-ci.com/JaniceZD/gulu-demo)
-  [![npm package](https://img.shields.io/npm/v/just-test-1.svg)](https://www.npmjs.com/package/just-test-1)
+  [![npm package](https://img.shields.io/npm/v/lemon-demo.svg)](https://www.npmjs.com/package/lemon-demo)
   ![](https://img.shields.io/badge/language-JavaScript-green.svg)
   [![](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/JaniceZD/gulu-demo/blob/master/LICENSE)
   
@@ -15,14 +15,14 @@
 ## Install
 
 ```sh
-npm i --save just-test-1
+npm install lemon-demo
 ```
 
 ## Usage
 
 ```
-import {Button, ButtonGroup, Icon} from 'just-test-1'
-import 'just-test-1/dist/index.css'
+import {Button, ButtonGroup, Icon} from 'lemon-demo'
+import 'lemon-demo/dist/index.css'
 
 export default {
   name: 'app',
