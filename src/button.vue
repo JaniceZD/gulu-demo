@@ -111,10 +111,6 @@
         cursor: pointer;
         border-radius: $border-radius;
 
-        &:hover {
-            border-color: $border-color-hover;
-        }
-
         &:focus {
             outline: none;
         }
@@ -163,56 +159,141 @@
     .color-primary {
         background-color: $color-primary;
         border: 2px solid $color-primary;
+
+        &:hover, &:focus {
+            border-color: $border-color-hover;
+        }
+
+        &:focus {
+            background-color: #66b1ff;
+            color: #fff;
+        }
     }
 
     .color-info {
         background-color: $color-info;
         border: 2px solid $color-info;
+
+        &:hover, &:focus {
+            border-color: #a6a9ad;
+        }
+
+        &:focus {
+            background-color: #a6a9ad;
+            color: #fff;
+        }
     }
 
     .color-success {
         background-color: $color-success;
         border: 2px solid $color-success;
+
+        &:hover, &:focus {
+            border-color: #85ce61;
+        }
+
+        &:focus {
+            background-color: #85ce61;
+            color: #fff;
+        }
     }
 
     .color-warning {
         background-color: $color-warning;
         border: 2px solid $color-warning;
+
+        &:hover, &:focus {
+            border-color: #FF6633;
+        }
+
+        &:focus {
+            background-color: #FF6633;
+            color: #fff;
+        }
     }
 
     .color-danger {
         background-color: $color-danger;
         border: 2px solid $color-danger;
+
+        &:hover, &:focus {
+            border-color: #e94043;
+        }
+
+        &:focus {
+            background-color: #e94043;
+            color: #fff;
+        }
     }
 
     .border-primary {
         background-color: $color;
         border: 2px solid $color-primary;
         color: $color-primary;
+
+        &:hover, &:focus {
+            border-color: $border-color-hover;
+        }
+
+        &:focus {
+            background-color: #ecf5ff;
+        }
     }
 
     .border-info {
         background-color: $color;
         border: 2px solid $color-info;
         color: $color-info;
+
+        &:hover, &:focus {
+            border-color: #a6a9ad;
+        }
+
+        &:focus {
+            background-color: #f4f4f5;
+        }
     }
 
     .border-success {
         background-color: $color;
         border: 2px solid $color-success;
         color: $color-success;
+
+        &:hover, &:focus {
+            border-color: #85ce61;
+        }
+
+        &:focus {
+            background-color: #f0f9eb;
+        }
     }
 
     .border-warning {
         background-color: $color;
         border: 2px solid $color-warning;
         color: $color-warning;
+
+        &:hover, &:focus {
+            border-color: #FF6633;
+        }
+
+        &:focus {
+            background-color: #fdf6ec;
+        }
     }
 
     .border-danger {
         background-color: $color;
         border: 2px solid $color-danger;
         color: $color-danger;
+
+        &:hover, &:focus {
+            border-color: #e94043;
+        }
+
+        &:focus {
+            background-color: #fef0f0;
+        }
     }
 
     .is-round {
