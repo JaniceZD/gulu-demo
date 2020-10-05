@@ -19,8 +19,8 @@ IE 8 及以上浏览器支持此样式。
 ## 引入必要资源
 
 ```js
-import {Button, ButtonGroup, Icon} from 'just-test-1'
-import 'just-test-1/dist/index.css'
+import {Button, ButtonGroup, Icon} from 'lemon-demo'
+import 'lemon-demo/dist/index.css'
 
 export default {
   name: 'app',

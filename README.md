@@ -32,6 +32,13 @@ export default {
   }
 }
 ```
+```vue
+<template>
+  <div>
+    <g-button>默认按钮</g-button>
+  </div>
+</template>
+```
 
 ## Run tests
 
